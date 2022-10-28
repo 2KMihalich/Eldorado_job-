@@ -1,0 +1,112 @@
+
+
+.shooting-video {
+  max-width: 1240px;
+  margin: 0 auto 70px;
+}
+.shooting-video__title {
+  padding-top: 20px;
+  padding-bottom: 30px;
+  border-top: 1px solid #b3b3b3;
+  font-size: 22px;
+  line-height: 31px;
+}
+.shooting-video__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.shooting-video__video {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 100%;
+          flex: 0 1 100%;
+  margin-bottom: 30px;
+}
+.shooting-video__video-img {
+  width: 100%;
+}
+.shooting-video__characteristics {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 100%;
+          flex: 0 1 100%;
+  padding: 0 15px;
+}
+
+.video-characteristics__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+}
+.video-characteristics__item:last-child {
+  margin-bottom: 0px;
+}
+.video-characteristics__svg {
+  margin-bottom: 20px;
+  min-width: 60px;
+  min-height: 60px;
+}
+.video-characteristics__text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+}
+@media (min-width: 600px) {
+  .shooting-video {
+    margin-bottom: 100px;
+  }
+  .shooting-video__content {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    padding: 0 25px 0;
+  }
+  .shooting-video__video {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 50%;
+            flex: 0 1 50%;
+    margin-bottom: 0;
+    margin-right: 20px;
+  }
+  .shooting-video__characteristics {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 50%;
+            flex: 1 1 50%;
+    padding: 0 0 0 21px;
+  }
+  .video-characteristics__item {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .video-characteristics__svg {
+    margin: 0 41px 0 0;
+  }
+  .shooting-video__title {
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 700;
+    padding: 40px 0 50px 0;
+  }
+}
+@media (min-width: 768px) {
+  .video-characteristics__text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

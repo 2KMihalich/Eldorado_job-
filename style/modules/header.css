@@ -1,0 +1,111 @@
+
+
+.header {
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 54px;
+}
+.header__container {
+  position: relative;
+}
+.header__navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 0px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.navigation__logo-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+
+  -webkit-box-flex: 1;
+
+      -ms-flex-positive: 1;
+
+          flex-grow: 1;
+}
+.navigation__logo {
+  margin-right: 15px;
+}
+.navigation__logo:last-child {
+  margin-right: 0;
+}
+.navigation__course-name {
+  display: none;
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
+  opacity: 0.7;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  white-space: nowrap;
+  overflow: hidden;
+
+  text-align: start;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+}
+
+.menu__list {
+  display: none;
+}
+
+.navigation__category {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  padding: 5px 15px;
+  background-color: #efefef;
+  font-size: 10px;
+  line-height: 14px;
+  opacity: 0.7;
+}
+@media (min-width: 480px) {
+  .header {
+    margin-bottom: 40px;
+  }
+  .container {
+    padding: 0 25px;
+  }
+
+  .navigation__logo-container {
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+    margin-right: 30px;
+  }
+  .navigation__logo {
+    min-width: 35px;
+    min-height: 35px;
+    margin-right: 20px;
+  }
+  .navigation__logo:nth-child(2) {
+    min-width: 40px;
+    min-height: 40px;
+  }
+  .navigation__course-name {
+    display: block;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+  .navigation__category {
+    width: 20%;
+    font-size: 0;
+    padding: 0;
+    height: 0;
+    background-color: transparent;
+    border-bottom: 3px solid #d70e2a;
+  }
+}
